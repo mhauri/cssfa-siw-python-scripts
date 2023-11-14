@@ -1,21 +1,7 @@
 import sys
 from collections import Counter, OrderedDict
-import matplotlib.pyplot as plot
-
-chart_colors = [
-    '#1f77b4',
-    '#ff7f0e',
-    '#2ca02c',
-    '#d62728',
-    '#9467bd',
-    '#8c564b',
-    '#e377c2',
-    '#7f7f7f',
-    '#bcbd22',
-    '#17becf',
-    '#aec7e8',
-    '#ffbb78'
-]
+import matplotlib.pyplot as plt
+import yaml
 
 def read_log_file(log_file):
     try:
@@ -44,18 +30,33 @@ def read_log_file(log_file):
             rounded_percentages = [round(percent, 2) for percent in percentages]
 
             # Plotting the pie chart
-            plot.figure(figsize=(8, 8))
-            plot.pie(sizes, colors=chart_colors, labels=labels, autopct=lambda p: '{:.2f}%'.format(p))
-            plot.title('Percentage Share of Status Codes')
+            plt.figure(figsize=(8, 6))
+            plt.pie(sizes, labels=labels, autopct=lambda p: '{:.2f}%'.format(p))
+            plt.title('Percentage Share of Status Codes')
 
             # Save the chart as statuscode.png
-            plot.savefig('statuscode.png')
-            plot.show()
+            plt.savefig('statuscode.png')
+            plt.show()
 
             # Print ordered list of status codes and their counts
             print("Ordered list of status codes and their counts:")
+            status_code_list = []
             for idx, (code, count) in enumerate(ordered_status_codes.items()):
+                status_code_list.append({'status_code': f"Status Code {code}", 'count': count, 'percentage': rounded_percentages[idx]})
                 print(f"{labels[idx]}: {rounded_percentages[idx]}%")
+
+            # Prepare data for YAML
+            status_code_list = []
+            for idx, (code, count) in enumerate(ordered_status_codes.items()):
+                status_code_data = {
+                    int(code): rounded_percentages[idx]
+                }
+                status_code_list.append(status_code_data)
+
+            # Write ordered key-value pairs to YAML file
+            with open('results.yaml', 'w') as yaml_file:
+                yaml.dump(status_code_list, yaml_file, default_flow_style=False)
+
     except FileNotFoundError:
         print("File not found! Please provide a valid file path.")
     except IOError:
