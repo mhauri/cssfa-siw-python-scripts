@@ -3,3 +3,13 @@ README.txt
 robots.txt
 humans.txt
 .git
+.viminfo
+.rhosts
+.rhost
+.profile
+.maintenance
+.kde
+.ftp
+.canna
+.backup
+.svn
