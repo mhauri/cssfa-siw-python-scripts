@@ -1,0 +1,5 @@
+CHANGELOG.txt
+README.txt
+robots.txt
+humans.txt
+.git
