@@ -17,7 +17,7 @@ def test_xss(url, payloads_file):
 
     for form in forms:
         # Find all input fields in the form
-        inputs = form.find_all('input')
+        inputs = form.find_all(['input', 'textarea'])
         fields = [input.get('name') for input in inputs]
 
         # Get the action attribute of the form (this is the submit URL)
