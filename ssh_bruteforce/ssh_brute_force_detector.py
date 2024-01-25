@@ -4,6 +4,9 @@ from collections import defaultdict
 import re
 
 def main():
+
+    TRESHOLD = 5
+
     print("[+] Starting SSH Brute Force Detector.")
 
     # Create a dictionary to store IP addresses and their corresponding failed login attempts
@@ -16,18 +19,13 @@ def main():
 
         while True:
             try:
-                # read and print log entries
                 for entry in journal:
                     if 'sshd' in entry.get('SYSLOG_IDENTIFIER', ''):
-                        # Check if the log entry indicates a failed login attempt
                         if 'Failed password' in entry.get('MESSAGE', ''):
-                            # Extract the IP address from the log entry
                             ip_address = extract_ip_address(entry['MESSAGE'])
-                            # Increment the count of failed login attempts for this IP address
                             failed_attempts[ip_address] += 1
 
-                            # If the number of failed attempts from this IP address exceeds a certain threshold, print a warning
-                            if failed_attempts[ip_address] > 5:
+                            if failed_attempts[ip_address] > TRESHOLD:
                                 print(f"[!] Detected SSH brute force attack from IP address {ip_address}!")
 
             except KeyboardInterrupt:
