@@ -33,6 +33,8 @@ def main():
                             failed_attempts[ip_address]['count'] += 1
                             failed_attempts[ip_address]['time'] = time.time()
 
+
+                            print(failed_attempts)
                             if failed_attempts[ip_address]['count'] > TRESHOLD:
                                 print(f"[!] Detected SSH brute force attack from IP address {ip_address}!")
 

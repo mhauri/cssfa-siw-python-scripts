@@ -1,0 +1,184 @@
+Message-ID: <ts86h4ts65h4t654t5d666764roger@serntoirshoydsrtsrehtyrxetnkiskto.me>
+Subject: Data you'll need
+From: "Roger Rabbit" <roger@serntoirshoydsrtsrehtyrxetnkiskto.me>
+To: admin@fakkecompaney.com
+X-Evolution-Format: text/html
+X-Evolution-Composer-Mode: text/html
+User-Agent: Evolution 3.36.2-0ubuntu1 
+Date: Wed, 17 Jun 2020 14:30:16 +0200
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-VIMdhMQNLKTKT31oycvM"
+
+This is a multi-part message in MIME format.
+
+--=-VIMdhMQNLKTKT31oycvM
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Hi Fred,
+So here’s a sum up of the users you need to know for the server’s DB:
+Kiara, she is our publisher and knows a thing or two about database
+administration, ask her if you ever need any other information
+Allessandro, he is the one that created the website, he worked for us
+on a contract to build the website and still has admin rights in case
+we ever need something fixed
+Pretty soon Kiara will work on the website, she told me there could be
+an SQLi infection or something somewhere, we just need to give her
+admin rights, can you contact Allessandro about that? Also ask him to
+give use the admin creds for our own db, that would be... nice.
+Thanks, Roger
+
+--=-VIMdhMQNLKTKT31oycvM
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html dir="ltr"><head><style id="-x-evo-quote-style" type="text/css">.-x-evo-quoted { -webkit-user-select: none; }</style><style id="-x-evo-a-color-style" type="text/css">a { color: #848484; }</style><style id="-x-evo-a-color-style-visited" type="text/css">a.-x-evo-visited-link { color: #f7f7f7; }</style><style id="-x-evo-composer-sheet" media="screen" type="text/css">body {
+  font-family: 'Ubuntu';
+  font-size: 11pt;
+  font-weight: 400;
+  font-style: normal;
+ -webkit-line-break: after-white-space;
+ -webkit-font-smoothing: subpixel-antialiased;
+}
+pre,code,.pre {
+  font-family: 'Ubuntu Mono';
+  font-size: 13pt;
+  font-weight: 400;
+  font-style: normal;
+}pre,code,address {
+  margin: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+td:before {
+ content: "​";}
+img {
+  height: inherit; 
+  width: inherit; 
+}
+span.-x-evo-resizable-wrapper:hover {
+  outline: 1px dashed red; 
+  resize: both; 
+  overflow: hidden; 
+  display: inline-block; 
+}
+td:hover {
+  outline: 1px dotted red;
+}
+body[data-evo-plain-text] {
+  font-family: Monospace; 
+}
+body[data-evo-plain-text] img.-x-evo-smiley-img, body:not([data-evo-plain-text]) span.-x-evo-smiley-text {
+  display: none 
+}
+[data-evo-paragraph] {
+  white-space: pre-wrap; 
+}
+body[data-evo-plain-text] [data-evo-paragraph] {
+  word-wrap: break-word; 
+  word-break: break-word; 
+}
+.-x-evo-plaintext-table {
+  border-collapse: collapse;
+  width: 71ch;
+}
+.-x-evo-plaintext-table td {
+  vertical-align: top;
+}
+body[data-evo-plain-text] ul {
+  list-style: outside none;
+  -webkit-padding-start: 3ch; 
+}
+body[data-evo-plain-text] ul > li {
+  list-style-position: outside;
+  text-indent: -2ch;
+}
+body[data-evo-plain-text] ul > li::before {
+  content: "* ";
+}
+body[data-evo-plain-text] ul.-x-evo-indented {
+  -webkit-padding-start: 3ch; 
+}
+body:not([data-evo-plain-text]) ul > li.-x-evo-align-center,ol > li.-x-evo-align-center {
+  list-style-position: inside;
+}
+body:not([data-evo-plain-text]) ul > li.-x-evo-align-right, ol > li.-x-evo-align-right {
+  list-style-position: inside;
+}
+ol {
+  -webkit-padding-start: 6ch; 
+}
+ol.-x-evo-indented {
+  -webkit-padding-start: 3ch; 
+}
+.-x-evo-align-left {
+  text-align: left; 
+}
+.-x-evo-align-center {
+  text-align: center; 
+}
+.-x-evo-align-right {
+  text-align: right; 
+}
+ol,ul {
+  -webkit-margin-before: 0em; 
+  -webkit-margin-after: 0em; 
+}
+blockquote {
+  -webkit-margin-before: 0em; 
+  -webkit-margin-after: 0em; 
+}
+a {
+  word-wrap: break-word; 
+  word-break: break-all; 
+}
+blockquote[type=cite] {
+  padding: 0.0ex 0ex;
+  margin: 0ex;
+  -webkit-margin-start: 0em; 
+  -webkit-margin-end : 0em; 
+  color: #737373 !important; 
+}
+.-x-evo-quote-character {
+  color: rgb(114,159,207);
+}
+.-x-evo-quote-character+.-x-evo-quote-character{
+  color: rgb(173,127,168);
+}
+.-x-evo-quote-character+.-x-evo-quote-character+.-x-evo-quote-character{
+  color: rgb(138,226,52);
+}
+.-x-evo-quote-character+.-x-evo-quote-character+.-x-evo-quote-character+.-x-evo-quote-character{
+  color: rgb(252,175,62);
+}
+.-x-evo-quote-character+.-x-evo-quote-character+.-x-evo-quote-character+.-x-evo-quote-character+.-x-evo-quote-character{
+  color: rgb(233,185,110);
+}
+body:not([data-evo-plain-text]) blockquote[type=cite] {
+  padding: 0ch 1ch 0ch 1ch;
+  margin: 0ch;
+  border-width: 0px 2px 0px 2px;
+  border-style: none solid none solid;
+  border-radius: 2px;
+}
+body:not([data-evo-plain-text]) blockquote[type=cite] {
+  border-color: rgb(114,159,207);
+}
+body:not([data-evo-plain-text]) blockquote[type=cite] blockquote[type=cite] {
+  border-color: rgb(173,127,168);
+}
+body:not([data-evo-plain-text]) blockquote[type=cite] blockquote[type=cite] blockquote[type=cite] {
+  border-color: rgb(138,226,52);
+}
+body:not([data-evo-plain-text]) blockquote[type=cite] blockquote[type=cite] blockquote[type=cite] blockquote[type=cite] {
+  border-color: rgb(252,175,62);
+}
+body:not([data-evo-plain-text]) blockquote[type=cite] blockquote[type=cite] blockquote[type=cite] blockquote[type=cite] blockquote[type=cite] {
+  border-color: rgb(233,185,110);
+}
+</style></head><body style="text-align:left; direction:ltr;" bgcolor="#ffffff" text="#000000" link="#848484" vlink="#f7f7f7" data-evo-draft=""><div data-evo-paragraph="" class="">Hi Fred,</div><div data-evo-paragraph="" class=""><br></div><div data-evo-paragraph="" class="">So here’s a sum up of the users you need to know for the server’s DB:</div><div data-evo-paragraph="" class=""><br></div><div data-evo-paragraph="" class=""><ul><li><b>Kiara</b>, she is our publisher and knows a thing or two about database administration, ask her if you ever need any other information </li><li><b>Allessandro</b>, he is the one that created the website, he worked for us on a <i>contract to build the website</i> and still has <u><b><i>admin rights</i></b></u> in case we ever need something fixed</li></ul><div data-evo-paragraph="" class=""><div><br></div></div></div><div data-evo-paragraph="" class="">Pretty soon Kiara will work on the website, she told me there could be an SQLi infection or something somewhere, we just need to give her admin rights, can you contact Allessandro about that? Also ask him to give use the admin creds for our own db, that would be... nice.<span id="-x-evo-selection-start-marker" data-anchor=""></span><span id="-x-evo-selection-end-marker"></span></div><div data-evo-paragraph="" class=""><br></div><div data-evo-paragraph="" class="">Thanks,&nbsp;</div><div data-evo-paragraph="" class="">Roger</div><div data-evo-paragraph="" class=""></div><div class="-x-evo-signature-wrapper"><span class="-x-evo-signature" id="none"></span></div></body></html>
+
+--=-VIMdhMQNLKTKT31oycvM--
+
