@@ -1,7 +1,21 @@
 import argparse
 import json
+import re
 from scapy.all import *
 from hashlib import sha1
+
+# Regular expression to match email addresses
+email_regex = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
+
+
+# Function to mask email addresses
+def mask_email(packet):
+    if packet.haslayer(Raw):
+        payload = packet[Raw].load.decode(errors='ignore')
+        if email_regex.search(payload):
+            masked_payload = email_regex.sub("masked@example.com", payload)
+            packet[Raw].load = masked_payload.encode()
+    return packet
 
 
 # Function to anonymize IP addresses
@@ -25,6 +39,9 @@ def anonymize_ip(packet, ip_mapping):
         ip_mapping[original_src] = anonymized_src
         ip_mapping[original_dst] = anonymized_dst
 
+    # Mask email addresses in SMTP traffic
+    packet = mask_email(packet)
+
     return packet
 
 
@@ -40,7 +57,7 @@ def main():
     # Dictionary to record original and anonymized IP addresses
     ip_mapping = {}
 
-    # Anonymize IP addresses in packets
+    # Anonymize IP addresses in packets and mask email addresses
     anonymized_packets = [anonymize_ip(packet, ip_mapping) for packet in packets]
 
     # Write anonymized packets to a new pcap file
