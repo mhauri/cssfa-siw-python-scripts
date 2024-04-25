@@ -1,0 +1,47 @@
+[
+  {
+    "requestId": "XgwDBH8AAAEAAHE2NZsAAAAJ",
+    "request": "GET /user/ HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUpgrade-Insecure-Requests:1\nSave-Data:on\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSec-Fetch-User:?1\nAccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\nSec-Fetch-Site:cross-site\nSec-Fetch-Mode:navigate\nReferer:https%3a//www.google.com/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9"
+  },
+  {
+    "requestId": "XgwDBH8AAAEAAHE2NZwAAAAJ",
+    "request": "GET /user/?__cookie_try=1 HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUpgrade-Insecure-Requests:1\nSave-Data:on\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSec-Fetch-User:?1\nAccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\nSec-Fetch-Site:cross-site\nSec-Fetch-Mode:navigate\nReferer:https%3a//www.google.com/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  },
+  {
+    "requestId": "XgwDBH8AAAEAAHE2NZ0AAAAJ",
+    "request": "GET /user/ HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUpgrade-Insecure-Requests:1\nSave-Data:on\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSec-Fetch-User:?1\nAccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\nSec-Fetch-Site:cross-site\nSec-Fetch-Mode:navigate\nReferer:https%3a//www.google.com/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  },
+  {
+    "requestId": "XgwDBX8AAAEAAHE2NZ4AAAAJ",
+    "request": "GET /user/login/ HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUpgrade-Insecure-Requests:1\nSave-Data:on\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSec-Fetch-User:?1\nAccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\nSec-Fetch-Site:cross-site\nSec-Fetch-Mode:navigate\nReferer:https%3a//www.google.com/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  },
+  {
+    "requestId": "XgwDBX8AAAEAAHE2NZ8AAAAJ",
+    "request": "GET /misc/css/hackinglab.css HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSave-Data:on\nAccept:text/css,*/*;q=0.1\nSec-Fetch-Site:same-origin\nSec-Fetch-Mode:no-cors\nReferer:https%3a//www.hacking-lab.com/user/login/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  },
+  {
+    "requestId": "XgwDBX8AAAEAAHFSmsAAAABW",
+    "request": "GET /misc/js/code_highlighter.js HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSave-Data:on\nAccept:*/*\nSec-Fetch-Site:same-origin\nSec-Fetch-Mode:no-cors\nReferer:https%3a//www.hacking-lab.com/user/login/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  },
+  {
+    "requestId": "XgwDBX8AAAEAAHFToWAAAACB",
+    "request": "GET /misc/js/tabs/jquery.js HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSave-Data:on\nAccept:*/*\nSec-Fetch-Site:same-origin\nSec-Fetch-Mode:no-cors\nReferer:https%3a//www.hacking-lab.com/user/login/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  },
+  {
+    "requestId": "XgwDBX8AAAEAAHFSmsEAAABW",
+    "request": "GET /misc/js/jq/themes/base/jquery.ui.theme.css HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSave-Data:on\nAccept:text/css,*/*;q=0.1\nSec-Fetch-Site:same-origin\nSec-Fetch-Mode:no-cors\nReferer:https%3a//www.hacking-lab.com/user/login/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  },
+  {
+    "requestId": "XgwDBX8AAAEAAHE2NaAAAAAJ",
+    "request": "GET /misc/css/tabs/ui.all.css HTTP/1.1",
+    "headers": "Host:www.hacking-lab.com\nConnection:keep-alive\nUser-Agent:Mozilla/5.0 (Linux; Android 9; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36\nSave-Data:on\nAccept:text/css,*/*;q=0.1\nSec-Fetch-Site:same-origin\nSec-Fetch-Mode:no-cors\nReferer:https%3a//www.hacking-lab.com/user/login/\nAccept-Encoding:gzip, deflate, br\nAccept-Language:en-US,en;q=0.9\nCookie:HLSSL=+Dsdl/rjJZNHJlwJyZqkCNsg5AojWkZJ"
+  }
+]
