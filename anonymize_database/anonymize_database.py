@@ -70,4 +70,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Call the anonymization function with the provided arguments
-    anonymize_data(args.input_db, args.output_db)
+    anonymize_data(args.input_db, args.output:_db)

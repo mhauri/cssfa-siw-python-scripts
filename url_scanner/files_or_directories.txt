@@ -2,6 +2,8 @@ CHANGELOG.txt
 README.txt
 robots.txt
 humans.txt
+console
+web.config
 .git
 .viminfo
 .rhosts
